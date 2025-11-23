@@ -2,9 +2,8 @@
 A developer & designer who likes tinkering around with things I shouldn't.
 
 **🔗 My Links**
---
-[Quick Links](https://feds.lol/fweah)
-[Discord](https://discord.com/users/817410231088578610)
+- [Quick Links](https://feds.lol/fweah)
+- [Discord](https://discord.com/users/817410231088578610)
 <!--
 **nordicalls/nordicalls** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
