@@ -2,6 +2,7 @@
 
 ```csharp
 github.com/nwsz
+feds.lol/nws
 dc   $  @nwsfuz
 rblx $  @nwsfuz
 ```
