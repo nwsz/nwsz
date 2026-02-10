@@ -8,4 +8,4 @@ rblx $  @nwsfuz
 
 &zwnj; 
 &zwnj; 
-![](https://komarev.com/ghpvc/?username=nordicalls)
+![](https://komarev.com/ghpvc/?username=nordicalls) [![more info](https://img.shields.io/badge/Open-NWS-blue?style=for-the-badge)](https://feds.lol/nws)
