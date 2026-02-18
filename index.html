@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nwsfuz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="https://www.transparentpng.com/download/emoticons/thinking-blue-emoticons-hd-transparent-1b3uLJ.png">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nordicalls.github.io/hub/">
+    <meta property="og:title" content="nwsfuz">
+    <meta property="og:description" content="Hey, I'm nwsfuz, (aka nordicalls) - come checkout my portfolio!">
+    <meta name="theme-color" content="#030303">
+
+    <meta name="twitter:title" content="nwsfuz">
+    <meta name="twitter:description" content="Hey, I'm nwsfuz, (aka nordicalls) - come checkout my portfolio!">
+
+    <style>
+        :root {
+            /* Light Mode */
+            --bg: #ffffff;
+            --text-main: #000000;
+            --text-muted: #555555;
+            --link-color: #5865f2;
+            --card-border: #eeeeee;
+            --btn-bg: #000000;
+            --btn-text: #ffffff;
+            --hr: #f0f0f0;
+            --radius: 14px; 
+            /* Scrollbar Colors */
+            --sb-track: #f1f1f1;
+            --sb-thumb: #cccccc;
+            --sb-thumb-hover: #b3b3b3;
+            /* Status Colors */
+            --status-online: #22c55e;
+            --status-offline: #ef4444;
+            --card-bg: #f9f9f9;
+        }
+
+        [data-theme="dark"] {
+            /* Dark Mode */
+            --bg: #09090b;
+            --text-main: #ffffff;
+            --text-muted: #a1a1aa;
+            --link-color: #7289da;
+            --card-border: #27272a;
+            --btn-bg: #ffffff;
+            --btn-text: #000000;
+            --hr: #18181b;
+            /* Scrollbar Colors Dark */
+            --sb-track: #18181b;
+            --sb-thumb: #3f3f46;
+            --sb-thumb-hover: #52525b;
+             /* Status Colors */
+             --card-bg: #111113;
+        }
+
+        /* --- Custom Scrollbar --- */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--sb-track);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--sb-thumb);
+            border-radius: 10px;
+            border: 2px solid var(--sb-track);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--sb-thumb-hover);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: 'JetBrains Mono', monospace;
+            display: flex;
+            justify-content: center;
+            padding: 60px 20px;
+            overflow-x: hidden;
+        }
+
+        /* --- Animation Classes --- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .container {
+            max-width: 650px;
+            width: 100%;
+        }
+
+        /* Toggle Button */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--btn-bg);
+            color: var(--btn-text);
+            border: 1px solid var(--card-border);
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.75rem;
+            font-weight: bold;
+            z-index: 100;
+        }
+
+        header {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .intro-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 5px;
+        }
+
+        .waving-hand { font-size: 3rem; }
+
+        h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .typing-container {
+            font-size: 1.2rem;
+            color: var(--text-main);
+            margin-bottom: 25px;
+        }
+
+        .hire-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            transition: transform 0.2s ease;
+        }
+
+        .hire-btn:hover {
+            transform: scale(1.03);
+        }
+
+        .discord-info {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .discord-info a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--hr);
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .about-text {
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* Experience Cards */
+        .experience-card { margin-bottom: 45px; }
+
+        .banner {
+            width: 100%;
+            height: 140px;
+            border-radius: var(--radius);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--card-border);
+        }
+
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.35);
+        }
+
+        .banner h3 {
+            position: relative;
+            color: white;
+            font-size: 1.8rem;
+            font-family: 'Inter', sans-serif;
+            z-index: 1;
+        }
+
+        .details-row {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .label { font-weight: bold; }
+
+        .links-row a {
+            color: var(--text-main);
+            text-decoration: underline;
+            margin-right: 12px;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            background-color: var(--text-main);
+            margin-left: 4px;
+            animation: blink 0.8s infinite;
+        }
+
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+        /* --- BOT STATUS CSS --- */
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .status-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .status-header {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .status-value-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            transition: all 0.4s ease;
+        }
+
+        /* Green Pulse Animation for Online */
+        .status-indicator.online {
+            background-color: #22c55e; /* Green */
+            box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+            animation: pulse-green 2s infinite;
+        }
+
+        /* Red for Offline */
+        .status-indicator.offline {
+            background-color: #ef4444; /* Red */
+            box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+        }
+
+        /* Blue for Members */
+        .status-indicator.members {
+            background-color: var(--link-color);
+        }
+
+        .status-text {
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: 'Inter', sans-serif;
+        }
+
+        @keyframes pulse-green {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark mode">Switch Theme</button>
+
+    <div class="container">
+        
+        <header class="reveal">
+            <div class="intro-row">
+                <span class="waving-hand">👋</span>
+                <h1>Hey, i'm diego</h1>
+            </div>
+            <div class="typing-container">
+                ..a <span id="typewriter"></span><span class="cursor">&nbsp;</span>
+            </div>
+
+            <a href="https://discord.com/users/817410231088578610" class="hire-btn">Contact Me &rarr;</a>
+            
+            <div class="discord-info">
+                or add me on discord with the user...<br>
+                <a href="https://discord.com/users/817410231088578610">@nordicalls</a>
+            </div>
+        </header>
+
+        <hr class="reveal">
+
+        <section class="reveal">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I am a graphics designer from the UK addicted to graphics design and tinkering.
+                Since 2024, I've fallen in love with graphics, and now I work part-time creating designs for others. 
+                When I'm not designing, I am tinkering with AI and other tools that are taking over our modern world
+                so that I can make cool things like this webpage.
+            </p>
+        </section>
+
+        <hr class="reveal">
+
+        <section>
+            <h2 class="reveal">My Experience</h2>
+
+            <div class="experience-card reveal">
+                <div class="banner" style="background-image: url('https://i.ibb.co/NdS0KYHy/image-1.png');">
+                    <h3>Bonaire</h3>
+                </div>
+                <div class="details-row">
+                    <span class="label">Position:</span>
+                    <span>Freelance Graphics Designer</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Timeframe:</span>
+                    <span>N/A</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Description:</span>
+                    <span>I've worked on redesigning logos and banners to add a premium touch to the project.</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Links:</span>
+                    <span class="links-row">
+                        <a href="https://www.roblox.com/games/134913590714763/Bonaire-The-Netherlands">Game</a> | <a href="https://www.roblox.com/communities/35585076/Bonaire-The-Netherlands-BTNL#!/about">Group</a> | <a href="https://discord.gg/BkK6eWwbND">Discord</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="experience-card reveal">
+                <div class="banner" style="background-image: url('https://i.ibb.co/YBn7QSRn/nordicalls-ONTOPs-1.png');">
+                    <h3>Volute: Metropolitan Police Service</h3>
+                </div>
+                <div class="details-row">
+                    <span class="label">Position:</span>
+                    <span>Media Staff</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Timeframe:</span>
+                    <span>June 2025 - Present</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Description:</span>
+                    <span>I created high quality propaganda for the group, some of which ended up on the unofficial wiki.</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Links:</span>
+                    <span class="links-row">
+                        <a href="https://www.roblox.com/games/13476966119/Buckingham-Palace">Game</a> | <a href="https://www.roblox.com/communities/32418861/Metropolitan-Polic-Servic">Group</a> | <a href="https://discord.gg/ryAXsdsnaW">Discord</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="experience-card reveal">
+                <div class="banner" style="background-image: url('https://i.ibb.co/gZW5zTPZ/nov1.png');">
+                    <h3>Space Recon</h3>
+                </div>
+                <div class="details-row">
+                    <span class="label">Position:</span>
+                    <span>Head of Media & Media Team</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Timeframe:</span>
+                    <span>October 2024 - June 2025</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Description:</span>
+                    <span>Although I did create media, I also led the media team and spent time teaching other members about graphics design tools.</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Links:</span>
+                    <span class="links-row">
+                        <a href="https://www.roblox.com/games/13476966119/Buckingham-Palace">Related Game</a> | Group Disbanded
+                    </span>
+                </div>
+            </div>
+
+            <div class="experience-card reveal">
+                <div class="banner" style="background-image: url('https://i.ibb.co/Txjbjcvx/LAS3.png');">
+                    <h3>Volute: London Ambulance Service</h3>
+                </div>
+                <div class="details-row">
+                    <span class="label">Position:</span>
+                    <span>Media Staff</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Timeframe:</span>
+                    <span>N/A</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Description:</span>
+                    <span>A trail blazer for the LAS group propaganda. I was one of the first to help advertise the team for the game Buckingham Palace Roblox</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Links:</span>
+                    <span class="links-row">
+                        <a href="https://www.roblox.com/games/13476966119/Buckingham-Palace">Game</a> | <a href="https://www.roblox.com/communities/35238415/London-Ambulance-Servi#!/about">Group</a> | <a href="https://discord.gg/buckingham">Discord</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="experience-card reveal">
+                <div class="banner" style="background-image: url('https://i.ibb.co/v5gr7Hy/branding-upd-1.png');">
+                    <h3>Nordicalls</h3>
+                </div>
+                <div class="details-row">
+                    <span class="label">Position:</span>
+                    <span>Owner</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Timeframe:</span>
+                    <span>August 2025 - Present</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Description:</span>
+                    <span>I founded the nordicalls group, and so I designed all the graphics / branding for nordicalls. Nordicalls is a Roblox Buckingham Palace community based around my youtube channel: Nordicalls. I've spent time learning new techniques specifically for nordicalls graphics.</span>
+                </div>
+                <div class="details-row">
+                    <span class="label">Links:</span>
+                    <span class="links-row">
+                        <a href="https://www.roblox.com/communities/126144713/Nordically#!/about">Group</a> | <a href="https://discord.gg/wb5sEAegtg">Discord</a>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="reveal">
+
+        <section class="reveal">
+            <h2>System Status</h2>
+            <div class="status-grid">
+                
+                <div class="status-box">
+                    <span class="status-header">Nordicalls Bot</span>
+                    <div class="status-value-row">
+                        <span id="bot-dot" class="status-indicator"></span>
+                        <span id="bot-text" class="status-text">...</span>
+                    </div>
+                </div>
+
+                <div class="status-box">
+                    <span class="status-header">Nordicalls API</span>
+                    <div class="status-value-row">
+                        <span id="api-dot" class="status-indicator"></span>
+                        <span id="api-text" class="status-text">...</span>
+                    </div>
+                </div>
+
+                <div class="status-box">
+                    <span class="status-header">Server Members</span>
+                    <div class="status-value-row">
+                        <span class="status-indicator members"></span>
+                        <span id="members-text" class="status-text">0</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="reveal">
+
+        <footer class="reveal" style="margin-top: 40px; text-align: center; font-size: 0.7rem; color: var(--text-muted); padding-bottom: 40px;">
+            &copy; 2026 nwsfuz.cc
+        </footer>
+    </div>
+
+    <script>
+        // --- Entrance Animation Logic ---
+        function reveal() {
+            const reveals = document.querySelectorAll(".reveal");
+            const windowHeight = window.innerHeight;
+            const revealPoint = 50;
+
+            reveals.forEach(el => {
+                const revealTop = el.getBoundingClientRect().top;
+                if (revealTop < windowHeight - revealPoint) {
+                    el.classList.add("active");
+                } else {
+                    el.classList.remove("active");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", reveal);
+
+        // --- Typing Animation ---
+        const textElement = document.getElementById('typewriter');
+        const phrases = ["Graphics Designer", "feds.lol staff member", "Small developer"];
+        let pIdx = 0, cIdx = 0, deleting = false;
+
+        function type() {
+            if(!textElement) return;
+
+            const current = phrases[pIdx];
+            textElement.textContent = deleting ? current.substring(0, cIdx - 1) : current.substring(0, cIdx + 1);
+            cIdx = deleting ? cIdx - 1 : cIdx + 1;
+
+            let speed = deleting ? 60 : 150;
+            if (!deleting && cIdx === current.length) { 
+                speed = 2000; 
+                deleting = true; 
+            } else if (deleting && cIdx === 0) { 
+                deleting = false; 
+                pIdx = (pIdx + 1) % phrases.length; 
+                speed = 500; 
+            }
+            setTimeout(type, speed);
+        }
+
+        // --- Theme Toggle ---
+        const themeBtn = document.getElementById('theme-toggle');
+        let isDark = false;
+        if(themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                isDark = !isDark;
+                document.body.setAttribute('data-theme', isDark ? 'dark' : 'light');
+            });
+        }
+
+        // --- FETCH STATUS LOGIC ---
+        async function fetchStatus() {
+            try {
+                // We add ?v=TIMESTAMP to force the browser to ignore the cache
+                const response = await fetch(`status.txt?v=${Date.now()}`);
+                
+                if (!response.ok) throw new Error("Status file missing");
+
+                const text = await response.text();
+                const lines = text.split('\n');
+
+                // Defaults
+                let botStatus = "Offline";
+                let apiStatus = "Offline";
+                let memberCount = "0";
+
+                // Parse lines safely
+                lines.forEach(line => {
+                    const lower = line.toLowerCase();
+                    
+                    if (lower.includes("nordicalls bot is:")) {
+                        botStatus = line.split(":")[1].trim(); 
+                    }
+                    if (lower.includes("nordicalls api is:")) {
+                        apiStatus = line.split(":")[1].trim();
+                    }
+                    if (lower.includes("server members:")) {
+                        memberCount = line.split(":")[1].trim();
+                    }
+                });
+
+                updateUI("bot", botStatus);
+                updateUI("api", apiStatus);
+                
+                const memEl = document.getElementById("members-text");
+                if(memEl) memEl.innerText = memberCount;
+
+            } catch (error) {
+                console.error("Status Error:", error);
+            }
+        }
+
+        function updateUI(idPrefix, statusText) {
+            const textEl = document.getElementById(idPrefix + "-text");
+            const dotEl = document.getElementById(idPrefix + "-dot");
+            
+            if (textEl && dotEl) {
+                textEl.innerText = statusText.charAt(0).toUpperCase() + statusText.slice(1);
+
+                if (statusText.toLowerCase().includes("online")) {
+                    dotEl.className = "status-indicator online";
+                } else {
+                    dotEl.className = "status-indicator offline";
+                }
+            }
+        }
+
+        // --- Initialization ---
+        // Runs everything once the HTML is ready
+        window.addEventListener("DOMContentLoaded", () => {
+            reveal();          // Trigger scroll animations immediately
+            type();            // Start typing
+            fetchStatus();     // Get status immediately
+            setInterval(fetchStatus, 5000); // Poll status every 5s
+        });
+    </script>
+</body>
+</html>
+
+
+
+
