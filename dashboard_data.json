@@ -1,0 +1,493 @@
+{
+    "guild_name": "Nordicalls",
+    "roles": [
+        {
+            "id": "1467553646194720875",
+            "name": "Nordicalls API"
+        },
+        {
+            "id": "1454890729846476895",
+            "name": "Nordicalls"
+        },
+        {
+            "id": "1423946170291589192",
+            "name": "Logs"
+        },
+        {
+            "id": "1459086988962435096",
+            "name": "Cinnamon"
+        },
+        {
+            "id": "1466091161402998856",
+            "name": "Invite Tracker"
+        },
+        {
+            "id": "1464631996708814986",
+            "name": "crime.bot"
+        },
+        {
+            "id": "1459820862172827847",
+            "name": "Booster Whitelist"
+        },
+        {
+            "id": "1454190433868451881",
+            "name": "main"
+        },
+        {
+            "id": "1454190402495320176",
+            "name": "gws"
+        },
+        {
+            "id": "1431049368475140248",
+            "name": "\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800 Misc \u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800"
+        },
+        {
+            "id": "1409955462564024371",
+            "name": "Server Member"
+        },
+        {
+            "id": "1463597616985145552",
+            "name": "Paddington Actor"
+        },
+        {
+            "id": "1458492199992819937",
+            "name": "Subscriber"
+        },
+        {
+            "id": "1462492944140603555",
+            "name": "Specialist"
+        },
+        {
+            "id": "1453847425780416684",
+            "name": "Former Staff"
+        },
+        {
+            "id": "1425363001107677184",
+            "name": "External Representatives"
+        },
+        {
+            "id": "1452211288754229349",
+            "name": "Donor"
+        },
+        {
+            "id": "1472365407028379780",
+            "name": "fuz smells"
+        },
+        {
+            "id": "1466090748062466245",
+            "name": "Partner"
+        },
+        {
+            "id": "1451328854802305065",
+            "name": "\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800Member\u200e\u200e\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800\u2800"
+        },
+        {
+            "id": "1414300152897994773",
+            "name": "Boosters"
+        },
+        {
+            "id": "1472546395482362009",
+            "name": "six seven"
+        },
+        {
+            "id": "1472173646481981568",
+            "name": "THE GUY_sashwati88i"
+        },
+        {
+            "id": "1469865104802578443",
+            "name": "67!"
+        },
+        {
+            "id": "1467453394242502798",
+            "name": "Laraaaa"
+        },
+        {
+            "id": "1463062312989495338",
+            "name": "ejkhnav1 is awesome"
+        },
+        {
+            "id": "1434956229779783724",
+            "name": "luisa"
+        },
+        {
+            "id": "1431020357501849722",
+            "name": "addi"
+        },
+        {
+            "id": "1455150367372214397",
+            "name": "booster \u2014\u2014\u2014\u2014\u2014\u2014\u2014"
+        },
+        {
+            "id": "1458492229285969930",
+            "name": "LiveShield"
+        },
+        {
+            "id": "1451660619437707274",
+            "name": "Helper (Not Staff)"
+        },
+        {
+            "id": "1411259723642179684",
+            "name": "Moderator"
+        },
+        {
+            "id": "1459474963198119987",
+            "name": "Leave of Absence"
+        },
+        {
+            "id": "1419253768968732702",
+            "name": "Content Creator"
+        },
+        {
+            "id": "1459934820816916490",
+            "name": "birthday boy"
+        },
+        {
+            "id": "1440826080322654210",
+            "name": "Admin"
+        },
+        {
+            "id": "1471920627731660962",
+            "name": "MSA Officer"
+        },
+        {
+            "id": "1467641847399846014",
+            "name": "MOTW"
+        },
+        {
+            "id": "1448719128708911295",
+            "name": "Developer"
+        },
+        {
+            "id": "1468313029937729680",
+            "name": "Nordicalls Bots"
+        },
+        {
+            "id": "1454900607315083394",
+            "name": "Server bots"
+        },
+        {
+            "id": "1458519744159289365",
+            "name": "Manager"
+        },
+        {
+            "id": "1409954674819469392",
+            "name": "Founder"
+        },
+        {
+            "id": "1460364312341381327",
+            "name": "nord"
+        },
+        {
+            "id": "1456714931625001050",
+            "name": "\u200e \u200e"
+        }
+    ],
+    "channels": [
+        {
+            "id": "1409957972586795149",
+            "name": "verify",
+            "type": "channel"
+        },
+        {
+            "id": "1465452714153480203",
+            "name": "\ud83d\ude80 Core > buckingham_palace",
+            "type": "channel"
+        },
+        {
+            "id": "1471883892674924739",
+            "name": "\ud83c\udfab Tickets > support_117",
+            "type": "channel"
+        },
+        {
+            "id": "1425905440104906885",
+            "name": "\ud83d\udcc2 Staff Team",
+            "type": "category"
+        },
+        {
+            "id": "1472021967493267563",
+            "name": "\ud83d\udcc4 Logs > msa_cases",
+            "type": "channel"
+        },
+        {
+            "id": "1410252520537981039",
+            "name": "\ud83d\ude80 Core > announcements",
+            "type": "channel"
+        },
+        {
+            "id": "1465393970451320914",
+            "name": "\ud83d\udd12 Admins > status",
+            "type": "channel"
+        },
+        {
+            "id": "1425907002160185415",
+            "name": "\ud83d\udcc2 Staff Team > mod_notices",
+            "type": "channel"
+        },
+        {
+            "id": "1463240614400491769",
+            "name": "\ud83e\ude99 Boosters > booster_help",
+            "type": "channel"
+        },
+        {
+            "id": "1472177257970925720",
+            "name": "resources",
+            "type": "channel"
+        },
+        {
+            "id": "1456702266185875731",
+            "name": "\ud83d\udcc2 Staff Team > helper_notices",
+            "type": "channel"
+        },
+        {
+            "id": "1434604928491323424",
+            "name": "\ud83d\ude80 Core > giveaways",
+            "type": "channel"
+        },
+        {
+            "id": "1446853408676904990",
+            "name": "\ud83d\udd12 Admins > updates",
+            "type": "channel"
+        },
+        {
+            "id": "1463597853854269628",
+            "name": "PBV Actors > pbv_anc",
+            "type": "channel"
+        },
+        {
+            "id": "1448391599188082878",
+            "name": "\ud83d\udd12 Admins > admins",
+            "type": "channel"
+        },
+        {
+            "id": "1463597787571552286",
+            "name": "PBV Actors",
+            "type": "category"
+        },
+        {
+            "id": "1458496845054607616",
+            "name": "\ud83d\udcc2 Staff Team > staff-blacklists",
+            "type": "channel"
+        },
+        {
+            "id": "1417181197636730901",
+            "name": "\ud83d\udcc2 Staff Team > mod_general",
+            "type": "channel"
+        },
+        {
+            "id": "1453372176198664358",
+            "name": "\ud83d\udd12 Admins",
+            "type": "category"
+        },
+        {
+            "id": "1426322984301367366",
+            "name": "\ud83d\udcc2 Staff Team > mod_info",
+            "type": "channel"
+        },
+        {
+            "id": "1416694879194579055",
+            "name": "\ud83d\ude80 Core > notices",
+            "type": "channel"
+        },
+        {
+            "id": "1466444888257331386",
+            "name": "\ud83c\udfe1 Townhall > General",
+            "type": "channel"
+        },
+        {
+            "id": "1445500470130114631",
+            "name": "\ud83d\udcc4 Logs > message-logs",
+            "type": "channel"
+        },
+        {
+            "id": "1450377494841528330",
+            "name": "\ud83d\udcc4 Logs > automod",
+            "type": "channel"
+        },
+        {
+            "id": "1409956094721396777",
+            "name": "\ud83d\ude80 Core",
+            "type": "category"
+        },
+        {
+            "id": "1431138936163668069",
+            "name": "\ud83c\udfa5 Content Creation > creator_notices",
+            "type": "channel"
+        },
+        {
+            "id": "1456764994783023174",
+            "name": "\ud83d\ude80 Core > polls",
+            "type": "channel"
+        },
+        {
+            "id": "1458575510132097056",
+            "name": "\ud83c\udfe1 Townhall > Studio",
+            "type": "channel"
+        },
+        {
+            "id": "1459611392356122636",
+            "name": "\ud83d\ude80 Core > best_of_nordicalls",
+            "type": "channel"
+        },
+        {
+            "id": "1465456377576161483",
+            "name": "\ud83c\udfe1 Townhall > Amphitheatre",
+            "type": "channel"
+        },
+        {
+            "id": "1463563543856288002",
+            "name": "\ud83d\ude80 Core > support",
+            "type": "channel"
+        },
+        {
+            "id": "1459134363668185181",
+            "name": "\ud83e\ude99 Boosters > booster_info",
+            "type": "channel"
+        },
+        {
+            "id": "1454463103545901096",
+            "name": "\ud83d\udd12 Admins > statistics",
+            "type": "channel"
+        },
+        {
+            "id": "1409973966252146699",
+            "name": "\ud83c\udfe1 Townhall > general",
+            "type": "channel"
+        },
+        {
+            "id": "1456255641671700612",
+            "name": "\ud83d\udd12 Admins > admins_notices",
+            "type": "channel"
+        },
+        {
+            "id": "1445500457131835453",
+            "name": "\ud83d\udcc4 Logs",
+            "type": "category"
+        },
+        {
+            "id": "1409972724578914334",
+            "name": "info",
+            "type": "channel"
+        },
+        {
+            "id": "1465606671823798312",
+            "name": "\ud83c\udfa5 Content Creation > partners",
+            "type": "channel"
+        },
+        {
+            "id": "1451542935668785212",
+            "name": "\ud83d\udd12 Admins > community-oversight",
+            "type": "channel"
+        },
+        {
+            "id": "1470171514643943434",
+            "name": "\ud83d\ude80 Core > events",
+            "type": "channel"
+        },
+        {
+            "id": "1430204089349701714",
+            "name": "\ud83c\udfe1 Townhall > counting",
+            "type": "channel"
+        },
+        {
+            "id": "1453372552725397687",
+            "name": "\ud83d\udd12 Admins > playground",
+            "type": "channel"
+        },
+        {
+            "id": "1451667456635572367",
+            "name": "\ud83d\udcc2 Staff Team > ht_info",
+            "type": "channel"
+        },
+        {
+            "id": "1472942785362399326",
+            "name": "\ud83d\udd12 Admins > purchases",
+            "type": "channel"
+        },
+        {
+            "id": "1433673998595784715",
+            "name": "\ud83d\udcc4 Logs > staff_logs",
+            "type": "channel"
+        },
+        {
+            "id": "1463598670871138427",
+            "name": "PBV Actors > pbv_onboarding",
+            "type": "channel"
+        },
+        {
+            "id": "1473641428813873217",
+            "name": "\ud83c\udfab Tickets > support_148",
+            "type": "channel"
+        },
+        {
+            "id": "1465089213828436099",
+            "name": "\ud83e\ude99 Boosters > donors",
+            "type": "channel"
+        },
+        {
+            "id": "1430363938712977538",
+            "name": "\ud83c\udfe1 Townhall > commands",
+            "type": "channel"
+        },
+        {
+            "id": "1463240202960244838",
+            "name": "\ud83e\ude99 Boosters",
+            "type": "category"
+        },
+        {
+            "id": "1432075756158320660",
+            "name": "\ud83c\udfa5 Content Creation",
+            "type": "category"
+        },
+        {
+            "id": "1426325422710460531",
+            "name": "\ud83c\udfe1 Townhall > suggestions",
+            "type": "channel"
+        },
+        {
+            "id": "1429844802408808609",
+            "name": "\ud83c\udfe1 Townhall > media",
+            "type": "channel"
+        },
+        {
+            "id": "1463598106535923857",
+            "name": "PBV Actors > pbv_acting",
+            "type": "channel"
+        },
+        {
+            "id": "1463598129596072059",
+            "name": "PBV Actors > paddington",
+            "type": "channel"
+        },
+        {
+            "id": "1452282374774853778",
+            "name": "\ud83d\udcc4 Logs > tickets",
+            "type": "channel"
+        },
+        {
+            "id": "1426937242886340650",
+            "name": "\ud83c\udfa5 Content Creation > creator_hangout",
+            "type": "channel"
+        },
+        {
+            "id": "1445500459237511321",
+            "name": "\ud83d\udcc4 Logs > member-logs",
+            "type": "channel"
+        },
+        {
+            "id": "1409972971023630457",
+            "name": "\ud83c\udfe1 Townhall",
+            "type": "category"
+        },
+        {
+            "id": "1437099805070594181",
+            "name": "\ud83c\udfab Tickets",
+            "type": "category"
+        },
+        {
+            "id": "1409957169872507009",
+            "name": "\ud83d\ude80 Core > uploads",
+            "type": "channel"
+        }
+    ],
+    "updated_at": "2026-02-18T15:43:35.633246+00:00"
+}
