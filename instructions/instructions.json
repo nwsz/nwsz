@@ -1,1 +1,11 @@
-
+{
+  "action": "edit_permissions",
+  "timestamp": 1771429452648,
+  "targetType": "channel",
+  "targetId": "1472021967493267563",
+  "roleId": "1440826080322654210",
+  "allow": [
+    "view_channel"
+  ],
+  "deny": []
+}
